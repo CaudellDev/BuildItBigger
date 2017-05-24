@@ -1,3 +1,9 @@
+# Udacity Android Dev Project 3: Build It Bigger
+
+All the initial commit code is not mine. I got it from the
+Udacity Github (https://github.com/udacity/ud867/tree/master/FinalProject).
+
+
 # Gradle for Android and Java Final Project
 
 In this project, you will create an app with multiple flavors that uses
