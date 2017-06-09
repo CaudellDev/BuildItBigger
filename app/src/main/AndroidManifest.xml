@@ -33,6 +33,11 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-    </application>
 
+        <receiver
+            android:name=".MainActivity$TaskReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+    </application>
 </manifest>
