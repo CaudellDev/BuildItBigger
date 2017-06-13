@@ -70,12 +70,15 @@ public class MainActivity extends AppCompatActivity {
         // Use an AsyncTask to send a request to the JokeServlet backend
 
         JokeTask jokeTask = new JokeTask();
+        jokeTask.setContext(this);
         jokeTask.execute("JOKE_RANDOM");
     }
 
     public class TaskReceiver extends BroadcastReceiver {
 
         public static final String TASK_TAG = "task_receiver_tag";
+
+        public static final String JOKE_RND = "joke_random";
 
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -84,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             String tag = intent.getStringExtra(TASK_TAG);
 
             switch (tag) {
-                case "joke_random":
-                    String joke = intent.getStringExtra("joke_random");
+                case JOKE_RND:
+                    String joke = intent.getStringExtra(JOKE_RND);
                     Snackbar.make(findViewById(R.id.root_layout), joke, Snackbar.LENGTH_LONG).show();
                     break;
 

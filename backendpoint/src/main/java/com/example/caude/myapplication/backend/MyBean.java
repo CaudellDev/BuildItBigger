@@ -7,6 +7,10 @@ public class MyBean {
 
     private String myData;
 
+    public MyBean(String data) {
+        myData = data;
+    }
+
     public String getData() {
         return myData;
     }
