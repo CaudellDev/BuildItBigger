@@ -12,9 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.udacity.gradle.JokeBuddy;
 import com.udacity.gradle.builditbigger.data.JokeTask;
 
 import joke.lib.builditbigger.exercise.udacity.jokedisplay.JokeActivity;
@@ -89,7 +87,11 @@ public class MainActivity extends AppCompatActivity {
             switch (tag) {
                 case JOKE_RND:
                     String joke = intent.getStringExtra(JOKE_RND);
-                    Snackbar.make(findViewById(R.id.root_layout), joke, Snackbar.LENGTH_LONG).show();
+
+                    Intent intentAct = new Intent(context, JokeActivity.class);
+                    intentAct.putExtra(JokeActivity.JOKE_TAG, joke);
+                    context.startActivity(intentAct);
+
                     break;
 
                 default:

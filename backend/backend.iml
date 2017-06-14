@@ -40,7 +40,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="jokeprovider" exported="" />
     <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
   </component>
 </module>
