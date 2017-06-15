@@ -45,17 +45,13 @@ dependencies {
     compile project(':jokeprovider')
     compile project(':jokedisplay')
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.google.android.gms:play-services-ads:11.0.0'
-    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    freeCompile 'com.google.android.gms:play-services-ads:11.0.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile project(path: ':backendpoint', configuration: 'android-endpoints')
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.google.code.gson:gson:2.7'
-
-    compile ('com.google.api-client:google-api-client-android:1.17.0-rc') {
+    compile('com.google.api-client:google-api-client-android:1.17.0-rc') {
         exclude module: 'httpclient'
     }
-    compile ('com.google.http-client:google-http-client-gson:1.17.0-rc') {
+    compile('com.google.http-client:google-http-client-gson:1.17.0-rc') {
         exclude module: 'httpclient'
     }
 }

@@ -11,15 +11,12 @@ import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.OkHttpClient;
 import com.udacity.gradle.builditbigger.MainActivity;
 
 import java.io.IOException;
 
 public class JokeTask extends AsyncTask<String, Void, String> {
 
-    private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static final String LOG_TAG = JokeTask.class.getSimpleName();
 
     private final String URI_PREFX = "https://";
