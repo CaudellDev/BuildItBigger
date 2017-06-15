@@ -58,13 +58,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-//        Intent intent = new Intent(this, JokeActivity.class);
-//
-//        // Add string extra could work too
-//        // intent.putExtra("EXTRA_TAG", JokeBuddy.getJoke());
-//
-//        startActivity(intent);
-
         // Use an AsyncTask to send a request to the JokeServlet backend
 
         JokeTask jokeTask = new JokeTask();
